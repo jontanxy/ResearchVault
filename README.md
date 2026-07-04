@@ -1,5 +1,5 @@
-# CSIT-26-S3-08
-## Proposed Title: Secure Data Sharing Platform for Collaborative Research
+# FYP CSIT-26-S3-08
+## Secure Data Sharing Platform for Collaborative Research
 
 ## Project details:
 The project aims to build a system that allows researchers to share sensitive 
