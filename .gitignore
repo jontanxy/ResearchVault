@@ -1,0 +1,192 @@
+# =========================================================
+# ResearchVault .gitignore
+# =========================================================
+
+
+# =========================================================
+# Environment variables / secrets
+# =========================================================
+.env
+.env.*
+!.env.example
+!.env.template
+*.env
+
+# Common local config files
+config.local.*
+settings.local.*
+secrets.*
+secret.*
+credentials.*
+credential.*
+private.*
+local.*
+
+# Do not commit generated secret/config folders
+secrets/
+secret/
+credentials/
+config/secrets/
+config/private/
+private/
+
+
+# =========================================================
+# Private keys / certificates / crypto material
+# =========================================================
+*.key
+*.pem
+*.p8
+*.p12
+*.pfx
+*.crt
+*.cer
+*.csr
+*.jks
+*.keystore
+*.asc
+*.gpg
+*.pgp
+id_rsa
+id_rsa.pub
+id_dsa
+id_dsa.pub
+id_ecdsa
+id_ecdsa.pub
+id_ed25519
+id_ed25519.pub
+*.pub
+
+# SSH / TLS local folders
+.ssh/
+certs/
+certificates/
+ssl/
+tls/
+keys/
+private_keys/
+
+
+# =========================================================
+# Cloud / service account credentials
+# =========================================================
+*service-account*.json
+*service_account*.json
+google-credentials.json
+firebase-credentials.json
+aws-credentials
+.aws/
+.gcp/
+.azure/
+.vercel/
+.netlify/
+
+# Common token files
+token.json
+tokens.json
+auth.json
+oauth.json
+client_secret*.json
+api_keys.json
+
+
+# =========================================================
+# Databases / local storage / research datasets
+# =========================================================
+*.db
+*.sqlite
+*.sqlite3
+*.mdb
+*.dump
+*.sql
+*.bak
+
+# Local datasets — use dummy/sample data instead
+data/
+datasets/
+research-data/
+private-data/
+sensitive-data/
+uploads/
+user_uploads/
+
+# But allow safe dummy/sample datasets if you want
+!sample-data/
+!sample-data/**
+!dummy-data/
+!dummy-data/**
+!docs/sample-data/
+!docs/sample-data/**
+
+
+# =========================================================
+# Logs / audit logs / runtime records
+# =========================================================
+*.log
+logs/
+audit-logs/
+audit_logs/
+access-logs/
+access_logs/
+runtime/
+tmp/
+temp/
+
+
+# =========================================================
+# Dependency folders
+# =========================================================
+node_modules/
+vendor/
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+
+# =========================================================
+# Build outputs
+# =========================================================
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+coverage/
+
+
+# =========================================================
+# IDE / editor files
+# =========================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+
+# =========================================================
+# OS / archive files
+# =========================================================
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+
+# =========================================================
+# Security scan outputs
+# =========================================================
+trivy-results.*
+semgrep-results.*
+gitleaks-report.*
+zap-report.*
+burp-report.*
